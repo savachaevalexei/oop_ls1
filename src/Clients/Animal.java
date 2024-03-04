@@ -35,6 +35,18 @@ public class Animal {
         System.out.println(getType() + " Play");
     }
 
+    public void toGo(){
+        System.out.println(getType() + " Go");
+    }
+
+    public void fly(){
+        System.out.println(getType() + " fly");
+    }
+
+    public void swim(){
+        System.out.println(getType() + "swim");
+    }
+
     public void live(){
         wakeUp(10);
         eat();

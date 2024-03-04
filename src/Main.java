@@ -1,7 +1,4 @@
-import Clients.Animal;
-import Clients.Dog;
-import Clients.Lion;
-import Clients.Owner;
+import Clients.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,25 +10,20 @@ public class Main {
     public static void main(String[] args) {
         Lion leva = new Lion("Лева", 200F, LocalDate.now(), new Owner());
         Dog haski = new Dog("Лаки", 30F, LocalDate.now(), new Owner());
+        Duck skrudj = new Duck("mcDuck", 10F, LocalDate.now(), new Owner());
 
-        Lion test = new Lion();
-        System.out.println(test);
+//        Lion test = new Lion();
+//        System.out.println(test);
+//        leva.live();
+//        List<Animal> animals = new ArrayList<>();
+//        animals.add(leva);
+//        animals.add(haski);
+//        animals.add(test);
+//        System.out.println(animals);
+//        System.out.println(leva.getType());
 
-        leva.live();
+        System.out.println(skrudj);
 
-        List<Animal> animals = new ArrayList<>();
-        animals.add(leva);
-        animals.add(haski);
-        animals.add(test);
-        System.out.println(animals);
-
-        // Передать новое значения для поля "вес"
-        // leva.setWeight(300F);
-
-        System.out.println(leva.getType());
-
-        System.out.println(haski);
-        System.out.println(haski.getType());
 
     }
 }
