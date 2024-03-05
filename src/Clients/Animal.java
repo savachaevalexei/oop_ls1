@@ -36,15 +36,18 @@ public class Animal {
     }
 
     public void toGo(){
-        System.out.println(getType() + " Go");
+        if (getType().equals("Cat") || getType().equals("Rabbit") || getType().equals("Duck") || getType().equals("Dog") || getType().equals("Lion"))
+            System.out.println(getType() + " Go");
     }
 
     public void fly(){
-        System.out.println(getType() + " fly");
+        if (getType().equals("Duck") || getType().equals("Parrot"))
+            System.out.println(getType() + " fly");
     }
 
     public void swim(){
-        System.out.println(getType() + "swim");
+        if (getType().equals("Fish") || getType().equals("Duck"))
+            System.out.println(getType() + "swim");
     }
 
     public void live(){
