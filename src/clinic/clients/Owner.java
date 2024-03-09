@@ -1,4 +1,4 @@
-package Clients;
+package clinic.clients;
 
 public class Owner {
     public String name;
